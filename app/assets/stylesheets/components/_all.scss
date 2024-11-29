@@ -1,0 +1,110 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #343a40;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #ffc107;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btns a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.nav-btns .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.nav-btns .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.nav-btns a:hover {
+  opacity: 0.85;
+}
+
+/* Container Styles */
+.container {
+  margin: 30px auto;
+  padding: 0 15px;
+  max-width: 800px;
+}
+
+.row h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+/* List Styles */
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef;
+}
+
+.list-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.list-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-btns {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
